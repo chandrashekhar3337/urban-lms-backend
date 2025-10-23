@@ -17,6 +17,7 @@ import "./utils/cronJobs.js";
 
  app.use(cookieParser())
 
+// src/index.js  (or src/server.js — jahan bhi listen kar raha ho)
 app.get("/", (req, res) => {
   res.send("Lead Management API is running...");
 });
