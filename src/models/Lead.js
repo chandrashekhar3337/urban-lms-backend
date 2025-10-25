@@ -10,6 +10,11 @@ const leadSchema = new mongoose.Schema({
     enum: ["Website", "Meta", "Google"],
     default: "Website",
   },
+  assignedTo: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+    default: null
+  },
   campaignName: String,
   keyword: String,
   createdAt: { type: Date, default: Date.now },

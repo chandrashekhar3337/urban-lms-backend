@@ -23,9 +23,11 @@ app.get("/", (req, res) => {
 });
 
  // routes:import
- import router from './routes/leadRoutes.js'
+import router from './routes/leadRoutes.js'
+import Usrouter from './routes/userRoutes.js'
  // routed declartion:
-app.use("/api/v1/users",router);
+app.use("/api/v1/leads",router);
+app.use("/api/v1/users",Usrouter);
 // app.use('/api/v1/users', renderRoutes);
 
  export { app }
