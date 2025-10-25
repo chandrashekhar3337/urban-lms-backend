@@ -186,7 +186,7 @@ const loginUser = asyncHandler(async (req, res) => {
 });
 
 
-// ✅ Get all leads of a specific user
+//  Get all leads of a specific user
  const getLeadsByUser = async (req, res) => {
   try {
     const { id } = req.params;
