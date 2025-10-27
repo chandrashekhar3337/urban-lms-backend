@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import cookieParser from "cookie-parser"
 import "./utils/cronJobs.js";
+import "./utils/selfPing.js";
 
  const app = express();
 
